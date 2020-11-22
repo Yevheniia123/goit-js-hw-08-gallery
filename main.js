@@ -48,10 +48,12 @@ refs.buttonAttributAction.addEventListener("click", onCloseClick);
 
 function onCloseClick(event) {
   refs.modal.classList.remove("is-open");
+  refs.largeImageModal.src = "";
 }
 
 refs.overlay.addEventListener("click", onOverlayClose);
 
 function onOverlayClose(event) {
   refs.modal.classList.remove("is-open");
+  refs.largeImageModal.src = "";
 }
